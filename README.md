@@ -16,7 +16,7 @@ const BamboraNode = require('bambora-node');
 module.exports = async () =>
   new BamboraNode(
     process.env.PASSCODE,
-    false, // disable preauth
+    false, // skipPreAuthorization
   ).postPayment({
     id: 1,
     token: 'foo',
